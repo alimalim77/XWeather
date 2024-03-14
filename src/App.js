@@ -22,7 +22,7 @@ function App() {
       }
       setWeather(data);
     } catch (error) {
-      alert("Failed to fetch weather data:");
+      console.error("Failed to fetch weather data");
     } finally {
       setLoading(false);
     }
